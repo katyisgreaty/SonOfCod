@@ -6,20 +6,29 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Welcome! Newsletter Info here!</h1>
+<h1>Oh My Cod!</h1>
+<h2>Son of Cod's exciting nautical newsletter</h2>
 <br />
 
-@Html.ActionLink("Sign up for newsletter Oh My Cod", "Create")
+@if (User.Identity.IsAuthenticated)
+{
+@Html.ActionLink("Sign up for the newsletter", "Create")
+    <br />
+    <ol>
+        @foreach (var listSubscriber in Model)
+        {
+            <li>
+                <h4>Subscriber Name: @Html.DisplayFor(modelSubscriber => listSubscriber.Name)</h4>
+                <h5>Email: @Html.DisplayFor(modelSubscriber => listSubscriber.Email)</h5>
+                <h4>Favorite Sea Creature: @Html.DisplayFor(modelSubscriber => listSubscriber.FaveSeaCreature)</h4>
+                <br />
+            </li>
+        }
+    </ol>
+}
+else
+{
+    <h4>Have a lovely day</h4>
+}
 
-<ol>
-    @foreach (var listSubscriber in Model)
-    {
-        <li>
-            <h4>Subscriber Name: @Html.DisplayFor(modelSubscriber => listSubscriber.Name)</h4>
-            <h5>Email: @Html.DisplayFor(modelSubscriber => listSubscriber.Email)</h5>
-            <h4>Favorite Sea Creature: @Html.DisplayFor(modelSubscriber => listSubscriber.FaveSeaCreature)</h4>
-            <br />
-        </li>
-    }
-</ol>
 

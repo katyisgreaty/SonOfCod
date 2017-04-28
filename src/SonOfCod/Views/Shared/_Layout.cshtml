@@ -11,7 +11,8 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="col-sm-6">Son of Cod Seafood</div>
+        <div class="col-sm-6">@Html.ActionLink("Son of Cod Seafood", "Index")</div>
+        <div class="col-sm-1">@Html.ActionLink("Marketing", "Marketing")</div>
         @if (User.Identity.IsAuthenticated)
         {
             <div class="pull-right">

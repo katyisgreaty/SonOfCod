@@ -29,6 +29,11 @@ namespace SonOfCod.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        public IActionResult Marketing()
+        {
+            return View();
+        }
     }
 
     
