@@ -2,10 +2,42 @@
     color: darkslateblue;
 }
 
+a {
+    color: #0858a8;
+}
+
+
+
 .navbar {
-    background-color: rebeccapurple;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid lightgray;
+    font-family: Montserrat,sans-serif;
+   
+}
+
+#sonofcod {
+    font-family: 'Niconne', cursive;
+}
+
+.navtop {
+    background-color: lightgray;
+    max-height: 25px;
+    min-height: 25px;
+}
+
+.navbottom {
+    background-color: white;
     color: white;
     font-size: 40px;
+    max-height: 35px !important;
+    border-radius: 0px;
+     text-transform: uppercase;
+}
+
+#sonofcod {
+    font-family: 'Niconne', cursive;
+    text-transform: none;
 }
 .pull-right {
     padding-right: 20px;
@@ -13,13 +45,47 @@
     font-size: 20px;
 }
 
+.nav-words {
+    font-size: 14px;
+    padding-top: 20px;
+}
+
 .dock {
     width: 100px;
     height: 400px;
 }
 
+.mid-header {
+    color: #584c40;
+    font-family: Georgia,serif;
+    font-weight: 400;
+    font-size: 34px;
+    text-align: center;
+}
+
+.small-header {
+    font-size: 24px;
+}
+
 .widebar {
-    background-color: red;
+    background-image: url("https://static.pexels.com/photos/275632/pexels-photo-275632.jpeg");
+    background-position: top; 
+    background-size:cover;
     height: 400px;
     width: 100%;
 }
+
+li {
+    font-family: 'Open Sans',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #584c40;
+    font-size: 16px;
+    margin-left: 35%;
+}
+
+
+
+font-family: 'Playball', cursive;
+font-family: 'Niconne', cursive;
+
