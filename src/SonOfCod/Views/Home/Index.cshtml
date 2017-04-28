@@ -6,13 +6,23 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<img class="dock" src="https://static.pexels.com/photos/275632/pexels-photo-275632.jpeg" />
+
+<img src="https://www.pacseafood.com/images/librariesprovider3/default-album/product-line.jpg?sfvrsn=0"/>
+
+
+
+
+
+
+
 <h1>Oh My Cod!</h1>
 <h2>Son of Cod's exciting nautical newsletter</h2>
 <br />
 
 @if (User.Identity.IsAuthenticated)
 {
-@Html.ActionLink("Sign up for the newsletter", "Create")
+    <h2>Current mailing list:</h2>
     <br />
     <ol>
         @foreach (var listSubscriber in Model)
@@ -28,7 +38,7 @@
 }
 else
 {
-    <h4>Have a lovely day</h4>
+    <h2>@Html.ActionLink("Sign up for the newsletter here!", "Create")</h2>
 }
 
 
