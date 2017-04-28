@@ -6,39 +6,41 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<img class="dock" src="https://static.pexels.com/photos/275632/pexels-photo-275632.jpeg" />
+<div class="widebar"></div>
+<div class="container">
+    <img class="dock" src="https://static.pexels.com/photos/275632/pexels-photo-275632.jpeg" />
 
-<img src="https://www.pacseafood.com/images/librariesprovider3/default-album/product-line.jpg?sfvrsn=0"/>
-
-
-
-
+    <img src="https://www.pacseafood.com/images/librariesprovider3/default-album/product-line.jpg?sfvrsn=0" />
 
 
 
-<h1>Oh My Cod!</h1>
-<h2>Son of Cod's exciting nautical newsletter</h2>
-<br />
 
-@if (User.Identity.IsAuthenticated)
-{
-    <h2>Current mailing list:</h2>
+
+
+
+    <h1>Oh My Cod!</h1>
+    <h2>Son of Cod's exciting nautical newsletter</h2>
     <br />
-    <ol>
-        @foreach (var listSubscriber in Model)
-        {
-            <li>
-                <h4>Subscriber Name: @Html.DisplayFor(modelSubscriber => listSubscriber.Name)</h4>
-                <h5>Email: @Html.DisplayFor(modelSubscriber => listSubscriber.Email)</h5>
-                <h4>Favorite Sea Creature: @Html.DisplayFor(modelSubscriber => listSubscriber.FaveSeaCreature)</h4>
-                <br />
-            </li>
-        }
-    </ol>
-}
-else
-{
-    <h2>@Html.ActionLink("Sign up for the newsletter here!", "Create")</h2>
-}
 
+    @if (User.Identity.IsAuthenticated)
+    {
+        <h2>Current mailing list:</h2>
+        <br />
+        <ol>
+            @foreach (var listSubscriber in Model)
+            {
+                <li>
+                    <h4>Subscriber Name: @Html.DisplayFor(modelSubscriber => listSubscriber.Name)</h4>
+                    <h5>Email: @Html.DisplayFor(modelSubscriber => listSubscriber.Email)</h5>
+                    <h4>Favorite Sea Creature: @Html.DisplayFor(modelSubscriber => listSubscriber.FaveSeaCreature)</h4>
+                    <br />
+                </li>
+            }
+        </ol>
+    }
+    else
+    {
+        <h2>@Html.ActionLink("Sign up for the newsletter here!", "Create")</h2>
+    }
 
+</div>

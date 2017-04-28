@@ -17,3 +17,9 @@
     width: 100px;
     height: 400px;
 }
+
+.widebar {
+    background-color: red;
+    height: 400px;
+    width: 100%;
+}
