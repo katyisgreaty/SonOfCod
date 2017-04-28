@@ -1,0 +1,30 @@
+﻿@using System.Security.Claims
+@model SonOfCod.Models.Market
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>Edit</h2>
+<hr />
+<h4>Edit this section: @Html.DisplayFor(model => model.Title)</h4>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.MarketId)
+
+    @Html.LabelFor(model => model.Title)
+    @Html.EditorFor(model => model.Title)
+
+    <label>Image Url:</label>
+    @Html.EditorFor(model => model.Image)
+
+    @Html.LabelFor(model => model.Content)
+    @Html.EditorFor(model => model.Content)
+
+    <input type="submit" value="Save" />
+}
+<p>@Html.ActionLink("Back to Marketing", "Marketing")</p>
+

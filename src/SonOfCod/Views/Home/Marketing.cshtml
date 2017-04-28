@@ -15,8 +15,9 @@
     <h4>@Html.DisplayFor(modelMarket => listMarket.Title)</h4>
     <img src="@Html.DisplayFor(modelSubscriber => listMarket.Image)" alt="image">
     <h4>@Html.DisplayFor(modelSubscriber => listMarket.Content)</h4>
-    <br />
-    }
+    <h5>@Html.ActionLink("Edit", "Edit", new { id = listMarket.MarketId })</h5>
+    @Html.ActionLink("Delete", "Delete", new { id = listMarket.MarketId })
+  }
 }
 else
 {
