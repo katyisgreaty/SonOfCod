@@ -7,7 +7,7 @@ a {
 }
 
 .container-down {
-    margin-top: 20px !important;
+    margin-top: 170px !important;
 }
 
 .navbar {
@@ -41,6 +41,21 @@ a {
     font-family: 'Niconne', cursive;
     text-transform: none;
 }
+
+.son-img {
+    background-image: url("http://2.bp.blogspot.com/-kAuyf8bu394/UHXpLqhTCNI/AAAAAAAAHSo/_h0tLlbNWr0/s1600/10.10-c.png");
+    height: 160px;
+    width: 450px;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+#small-fish {
+    margin-left: 60%;
+    margin-top: -20%;
+    height: 70px;
+}
+
 .pull-right {
     padding-right: 20px;
     color: white;

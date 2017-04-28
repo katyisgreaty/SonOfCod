@@ -11,10 +11,19 @@
     <title>@ViewBag.Title</title>
 </head>
 <body>
-    <div class="navbar navtop"></div>
+    <div class="navbar navtop">
+        
+    </div>
     <div class="navbar navbottom">
-        <div class="col-sm-6" id="sonofcod">@Html.ActionLink("Son of Cod Seafood", "Index")</div>
-        <div class="col-sm-1 nav-words">@Html.ActionLink("Marketing", "Marketing")</div>
+       
+        <div class="col-sm-6" id="sonofcod">
+            <div class="son-img">
+                @Html.ActionLink("Son of Cod Seafood", "Index", "Home")
+                <img id="small-fish" src="http://www.mardon.com/img/products/atlantic-cod.png" />
+            </div>
+        </div>
+        <div class="col-sm-1 nav-words">
+            @Html.ActionLink("Marketing", "Marketing", "Home")</div>
         @if (User.Identity.IsAuthenticated)
         {
             <div class="pull-right nav-words">
@@ -40,7 +49,9 @@
             </div>
             
         }
+        
     </div>
+    
     <div>
         @RenderBody()
     </div>
