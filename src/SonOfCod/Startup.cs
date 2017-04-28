@@ -51,7 +51,7 @@ namespace SonOfCod
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Something seems to be a bit off...");
+                await context.Response.WriteAsync("We got lost in a field of jellyfish! Turn back!");
             });
         }
     }

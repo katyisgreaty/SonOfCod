@@ -204,7 +204,13 @@
 --resource:"c:\Users\epicodus\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\obj\Debug\netcoreapp1.0\SonOfCoddotnet-compile.deps.json",SonOfCod.deps.json
 c:\Users\epicodus\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Program.cs
 c:\Users\epicodus\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Startup.cs
+c:\Users\epicodus\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Controllers\AccountController.cs
 c:\Users\epicodus\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Controllers\HomeController.cs
+c:\Users\epicodus\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170428162727_Initial.cs
+c:\Users\epicodus\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170428162727_Initial.Designer.cs
+c:\Users\epicodus\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\SonOfCodContextModelSnapshot.cs
 c:\Users\epicodus\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Models\AdminUser.cs
 c:\Users\epicodus\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Models\SonOfCodContext.cs
 c:\Users\epicodus\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Models\Subscriber.cs
+c:\Users\epicodus\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\ViewModels\LoginViewModel.cs
+c:\Users\epicodus\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\ViewModels\RegisterViewModel.cs
