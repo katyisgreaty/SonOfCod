@@ -16,5 +16,20 @@ namespace SonOfCod.Controllers
         {
             return View(db.Subscribers.ToList());
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Subscriber subscriber)
+        {
+            db.Subscribers.Add(subscriber);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
+
+    
 }
