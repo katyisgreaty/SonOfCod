@@ -32,7 +32,7 @@ namespace SonOfCod.Controllers
 
         public IActionResult Marketing()
         {
-            return View();
+            return View(db.Markets.ToList());
         }
     }
 
