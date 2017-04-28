@@ -6,4 +6,17 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<p>hi</p>
+<h4>Subscribe to our newsletter, "Oh My Cod!"</h4>
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Name)
+    @Html.TextBoxFor(model => model.Name)
+
+    @Html.LabelFor(model => model.Email)
+    @Html.TextBoxFor(model => model.Email)
+
+    <label>Favorite Sea Creature</label>
+    @Html.TextBoxFor(model => model.FaveSeaCreature)
+    <input type="submit" value="Add new subscriber" />
+}
+<p>@Html.ActionLink("Home", "Index")</p>
