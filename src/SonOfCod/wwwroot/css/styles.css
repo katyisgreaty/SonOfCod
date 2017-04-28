@@ -6,7 +6,9 @@ a {
     color: #0858a8;
 }
 
-
+.container-down {
+    margin-top: 20px !important;
+}
 
 .navbar {
     margin-bottom: 0px;
@@ -32,7 +34,7 @@ a {
     font-size: 40px;
     max-height: 35px !important;
     border-radius: 0px;
-     text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 #sonofcod {
